@@ -59,6 +59,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -109,10 +110,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.gxj.demo.test.HelloWorld" />
+      <module name="demo-jvm-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.gxj.demo.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.gxj.demo.jvm.Main" />
       <module name="demo-jvm-01" />
-      <option name="PROGRAM_PARAMETERS" value="-cp classpath HelloWorld 11" />
+      <option name="PROGRAM_PARAMETERS" value="-Xjre &quot;E:\Java\jdk1.8.0_131\jre&quot; E:\javaProject\demo-jvm\demo-jvm-01\src\test\java\org\gxj\demo\test\HelloWorld" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.gxj.demo.jvm.*" />
@@ -137,10 +151,12 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Hello" />
+      <item itemvalue="Application.HelloWorld" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.HelloWorld" />
         <item itemvalue="Application.Hello" />
       </list>
     </recent_temporary>
@@ -153,7 +169,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672040000024</updated>
-      <workItem from="1672040001084" duration="3261000" />
+      <workItem from="1672040001084" duration="10521000" />
     </task>
     <servers />
   </component>
@@ -176,30 +192,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1672042196731" />
-    <state x="447" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1672042598993">
+    <state x="447" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1672050859091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="447" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1672042598993" />
-    <state width="724" height="213" key="GridCell.Tab.0.bottom" timestamp="1672043211823">
+    <state x="447" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1672050859091" />
+    <state x="958" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1672048435315">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="724" height="213" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1672043211823" />
-    <state width="724" height="213" key="GridCell.Tab.0.center" timestamp="1672043211823">
+    <state x="958" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1672048435315" />
+    <state width="724" height="501" key="GridCell.Tab.0.bottom" timestamp="1672055845503">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="724" height="213" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1672043211823" />
-    <state width="724" height="213" key="GridCell.Tab.0.left" timestamp="1672043211823">
+    <state width="724" height="501" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1672055845503" />
+    <state width="724" height="501" key="GridCell.Tab.0.center" timestamp="1672055845503">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="724" height="213" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1672043211823" />
-    <state width="724" height="213" key="GridCell.Tab.0.right" timestamp="1672043211823">
+    <state width="724" height="501" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1672055845503" />
+    <state width="724" height="501" key="GridCell.Tab.0.left" timestamp="1672055845503">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="724" height="213" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1672043211823" />
-    <state x="417" y="0" key="SettingsEditor" timestamp="1672042371225">
+    <state width="724" height="501" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1672055845503" />
+    <state width="724" height="501" key="GridCell.Tab.0.right" timestamp="1672055845503">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="417" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1672042371225" />
+    <state width="724" height="501" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1672055845503" />
+    <state x="417" y="0" key="SettingsEditor" timestamp="1672048621151">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="417" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1672048621151" />
     <state x="356" y="73" key="new project wizard" timestamp="1672043260690">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
