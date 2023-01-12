@@ -79,4 +79,13 @@ public class Classpath {
         return userClasspath.readClass(className);
 
     }
+
+//    @Override
+//    public String toString() {
+//        return "Classpath{" +
+//                "bootstrapClasspath=" + bootstrapClasspath +
+//                ", extensionClasspath=" + extensionClasspath +
+//                ", userClasspath=" + userClasspath +
+//                '}';
+//    }
 }
