@@ -20,21 +20,12 @@ import java.math.BigInteger;
  * 输出二进制：new BigInteger("-120", 10).toString(2))
  */
 public class HelloWorld {
-
     public static void main(String[] args) {
-
-        byte[] val = {-16};
-
-        BigInteger bigInteger = new BigInteger(1, val);
-
-        //无符号（增位）
-        String str_hex = bigInteger.toString(10);
-        System.out.println(str_hex);
-        System.out.println(Integer.parseInt(str_hex, 10));
-
-        //有符号
-        System.out.println(bigInteger.byteValue());
-
+        float val = 0.1f;
+        int num = Float.floatToIntBits(val);
+        float val1 = Float.intBitsToFloat(num);
+        System.out.println(val);
+        System.out.println(val1);
     }
 
 }

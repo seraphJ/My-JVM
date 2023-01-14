@@ -14,44 +14,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8d3ccdc-b5fc-4bc4-8c5a-1cbfe5cad5c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/ClassFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/ClassReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/MemberInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/attributes/AttributeInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/attributes/impl/CodeAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/attributes/impl/ConstantValueAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/attributes/impl/DeprecatedAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/attributes/impl/ExceptionsAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/attributes/impl/LineNumberTableAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/attributes/impl/LocalVariableTableAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/attributes/impl/MarkerAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/attributes/impl/SourceFileAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/attributes/impl/SyntheticAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/attributes/impl/UnparsedAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/constantpool/ConstantInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/constantpool/ConstantPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/constantpool/impl/ConstantClassInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/constantpool/impl/ConstantDoubleInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/constantpool/impl/ConstantFieldRefInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/constantpool/impl/ConstantFloatInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/constantpool/impl/ConstantIntegerInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/constantpool/impl/ConstantInterfaceMethodRefInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/constantpool/impl/ConstantInvokeDynamicInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/constantpool/impl/ConstantLongInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/constantpool/impl/ConstantMemberRefInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/constantpool/impl/ConstantMethodHandleInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/constantpool/impl/ConstantMethodRefInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/constantpool/impl/ConstantMethodTypeInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/constantpool/impl/ConstantNameAndTypeInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/constantpool/impl/ConstantStringInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classfile/constantpool/impl/ConstantUtf8Info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/Frame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/JvmStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/LocalVars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/OperandStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/Slot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/Thread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classpath/Classpath.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/classpath/Classpath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-jvm-01/src/test/java/org/gxj/demo/test/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/src/test/java/org/gxj/demo/test/HelloWorld.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-jvm-01/target/classes/org/gxj/demo/jvm/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/target/classes/org/gxj/demo/jvm/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-jvm-01/target/test-classes/org/gxj/demo/test/HelloWorld.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/target/test-classes/org/gxj/demo/test/HelloWorld.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +83,7 @@
       <recent name="org.gxj.demo.jvm.classfile.constantpool.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HelloWorld">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hello" />
       <module name="untitled" />
@@ -134,7 +107,6 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.gxj.demo.jvm.Main" />
       <module name="demo-jvm-01" />
-      <option name="PROGRAM_PARAMETERS" value="java.lang.String" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.gxj.demo.jvm.*" />
@@ -165,8 +137,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloWorld" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.HelloWorld" />
         <item itemvalue="Application.Hello" />
       </list>
     </recent_temporary>
@@ -180,7 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672040000024</updated>
       <workItem from="1672040001084" duration="13586000" />
-      <workItem from="1673255218384" duration="31970000" />
+      <workItem from="1673255218384" duration="47276000" />
     </task>
     <servers />
   </component>
@@ -204,30 +176,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1672042196731" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1673535137312">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1673687833583">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1673535137312" />
-    <state x="958" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1673519620931">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1673687833583" />
+    <state x="958" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1673685901818">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="958" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1673519620931" />
-    <state width="725" height="308" key="GridCell.Tab.0.bottom" timestamp="1673536855018">
+    <state x="958" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1673685901818" />
+    <state width="1493" height="249" key="GridCell.Tab.0.bottom" timestamp="1673698445632">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="725" height="308" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1673536855018" />
-    <state width="725" height="308" key="GridCell.Tab.0.center" timestamp="1673536855018">
+    <state width="1493" height="249" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1673698445632" />
+    <state width="1493" height="249" key="GridCell.Tab.0.center" timestamp="1673698445632">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="725" height="308" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1673536855018" />
-    <state width="725" height="308" key="GridCell.Tab.0.left" timestamp="1673536855018">
+    <state width="1493" height="249" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1673698445632" />
+    <state width="1493" height="249" key="GridCell.Tab.0.left" timestamp="1673698445632">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="725" height="308" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1673536855018" />
-    <state width="725" height="308" key="GridCell.Tab.0.right" timestamp="1673536855018">
+    <state width="1493" height="249" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1673698445632" />
+    <state width="1493" height="249" key="GridCell.Tab.0.right" timestamp="1673698445632">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="725" height="308" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1673536855018" />
+    <state width="1493" height="249" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1673698445632" />
+    <state width="723" height="210" key="GridCell.Tab.1.bottom" timestamp="1673690555536">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="723" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1673690555536" />
+    <state width="723" height="210" key="GridCell.Tab.1.center" timestamp="1673690555535">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="723" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1673690555535" />
+    <state width="723" height="210" key="GridCell.Tab.1.left" timestamp="1673690555535">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="723" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1673690555535" />
+    <state width="723" height="210" key="GridCell.Tab.1.right" timestamp="1673690555535">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="723" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1673690555535" />
     <state x="417" y="0" key="SettingsEditor" timestamp="1672048621151">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
