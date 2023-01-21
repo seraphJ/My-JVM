@@ -3,6 +3,7 @@ package org.gxj.demo.jvm.rtda;
 /**
  * @author gxj
  * @date 2023/1/14 15:41
+ * 线程
  */
 public class Thread {
 
@@ -20,7 +21,7 @@ public class Thread {
         return this.pc;
     }
 
-    public void setPc(int pc) {
+    public void setPC(int pc) {
         this.pc = pc;
     }
 
@@ -34,5 +35,9 @@ public class Thread {
 
     public Frame currentFrame() {
         return this.stack.top();
+    }
+
+    public Frame newFrame(int maxLocals, int maxStack) {
+        return new Frame(this, maxLocals, maxStack);
     }
 }

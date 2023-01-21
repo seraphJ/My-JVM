@@ -14,22 +14,196 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8d3ccdc-b5fc-4bc4-8c5a-1cbfe5cad5c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/Frame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/JvmStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/LocalVars.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/OperandStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/Slot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/Thread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/Interpret.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/base/BytecodeReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/base/Instruction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/base/InstructionBranch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/base/InstructionIndex16.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/base/InstructionIndex8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/base/InstructionNoOperands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/dcmp/DCMPG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/dcmp/DCMPL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/fcmp/FCMPG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/fcmp/FCMPL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/if_acmp/IF_ACMPEQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/if_acmp/IF_ACMPNE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/if_icmp/IF_ICMPEQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/if_icmp/IF_ICMPGE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/if_icmp/IF_ICMPGT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/if_icmp/IF_ICMPLE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/if_icmp/IF_ICMPLT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/if_icmp/IF_ICMPNE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/ifcond/IFEQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/ifcond/IFGE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/ifcond/IFGT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/ifcond/IFLE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/ifcond/IFLT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/ifcond/IFNE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/lcmp/LCMP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/constants/consts/ACONST_NULL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/constants/consts/DCONST_0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/constants/consts/DCONST_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/constants/consts/FCONST_0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/constants/consts/FCONST_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/constants/consts/FCONST_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/constants/consts/ICONST_0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/constants/consts/ICONST_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/constants/consts/ICONST_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/constants/consts/ICONST_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/constants/consts/ICONST_4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/constants/consts/ICONST_5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/constants/consts/ICONST_M1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/constants/consts/LCONST_0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/constants/consts/LCONST_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/constants/ipush/BIPUSH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/constants/ipush/SIPUSH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/constants/nop/NOP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/control/GOTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/control/LOOKUP_SWITCH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/control/TABLE_SWITCH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/conversions/d2x/D2F.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/conversions/d2x/D2I.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/conversions/d2x/D2L.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/conversions/f2x/F2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/conversions/f2x/F2I.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/conversions/f2x/F2L.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/conversions/i2x/I2B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/conversions/i2x/I2C.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/conversions/i2x/I2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/conversions/i2x/I2F.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/conversions/i2x/I2L.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/conversions/i2x/I2S.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/conversions/l2x/L2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/conversions/l2x/L2F.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/conversions/l2x/L2I.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/extended/GOTO_W.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/extended/WIDE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/extended/ifnull/IFNONNULL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/extended/ifnull/IFNULL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/aload/ALOAD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/aload/ALOAD_0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/aload/ALOAD_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/aload/ALOAD_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/aload/ALOAD_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/dload/DLOAD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/dload/DLOAD_0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/dload/DLOAD_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/dload/DLOAD_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/dload/DLOAD_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/fload/FLOAD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/fload/FLOAD_0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/fload/FLOAD_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/fload/FLOAD_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/fload/FLOAD_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/iload/ILOAD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/iload/ILOAD_0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/iload/ILOAD_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/iload/ILOAD_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/iload/ILOAD_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/lload/LLOAD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/lload/LLOAD_0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/lload/LLOAD_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/lload/LLOAD_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/loads/lload/LLOAD_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/add/DADD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/add/FADD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/add/IADD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/add/LADD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/and/IAND.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/and/LAND.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/div/DDIV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/div/FDIV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/div/IDIV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/div/LDIV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/iinc/IINC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/mul/DMUL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/mul/FMUL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/mul/IMUL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/mul/LMUL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/neg/DNEG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/neg/FNEG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/neg/INEG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/neg/LNEG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/or/IOR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/or/LOR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/rem/DREM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/rem/FREM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/rem/IREM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/rem/LREM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/sh/ISHL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/sh/ISHR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/sh/IUSHR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/sh/LSHL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/sh/LSHR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/sh/LUSHR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/sub/DSUB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/sub/FSUB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/sub/ISUB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/sub/LSUB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/xor/IXOR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/math/xor/LXOR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stack/dup/DUP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stack/dup/DUP2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stack/dup/DUP2_X1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stack/dup/DUP2_X2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stack/dup/DUP_X1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stack/dup/DUP_X2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stack/pop/POP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stack/pop/POP2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stack/swap/SWAP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/astore/ASTORE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/astore/ASTORE_0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/astore/ASTORE_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/astore/ASTORE_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/astore/ASTORE_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/dstore/DSTORE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/dstore/DSTORE_0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/dstore/DSTORE_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/dstore/DSTORE_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/dstore/DSTORE_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/fstore/FSTORE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/fstore/FSTORE_0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/fstore/FSTORE_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/fstore/FSTORE_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/fstore/FSTORE_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/istore/ISTORE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/istore/ISTORE_0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/istore/ISTORE_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/istore/ISTORE_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/istore/ISTORE_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/lstore/LSTORE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/lstore/LSTORE_0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/lstore/LSTORE_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/lstore/LSTORE_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/stores/lstore/LSTORE_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/Frame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/LocalVars.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/LocalVars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/OperandStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/OperandStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/Slot.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/Slot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/Thread.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/rtda/Thread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-jvm-01/src/test/java/org/gxj/demo/test/HelloWorld.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-jvm-01/src/test/java/org/gxj/demo/test/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/src/test/java/org/gxj/demo/test/HelloWorld.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-jvm-01/target/classes/org/gxj/demo/jvm/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/target/classes/org/gxj/demo/jvm/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-jvm-01/target/classes/org/gxj/demo/jvm/rtda/Frame.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/target/classes/org/gxj/demo/jvm/rtda/Frame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-jvm-01/target/classes/org/gxj/demo/jvm/rtda/LocalVars.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/target/classes/org/gxj/demo/jvm/rtda/LocalVars.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-jvm-01/target/classes/org/gxj/demo/jvm/rtda/OperandStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/target/classes/org/gxj/demo/jvm/rtda/OperandStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-jvm-01/target/classes/org/gxj/demo/jvm/rtda/Slot.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/target/classes/org/gxj/demo/jvm/rtda/Slot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-jvm-01/target/classes/org/gxj/demo/jvm/rtda/Thread.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/target/classes/org/gxj/demo/jvm/rtda/Thread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-jvm-01/target/test-classes/org/gxj/demo/test/HelloWorld.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-jvm-01/target/test-classes/org/gxj/demo/test/HelloWorld.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -66,6 +240,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo-jvm-01/src/main/java/org/gxj/demo/jvm/instructions/comparisons/if_icmp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -76,11 +251,22 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.gxj.demo.jvm.classfile.constantpool.impl" />
+      <recent name="org.gxj.demo.jvm.instructions.extended.ifnull" />
+      <recent name="org.gxj.demo.jvm.instructions.comparisons.if_acmp" />
+      <recent name="org.gxj.demo.jvm.instructions.comparisons.ifcond" />
+      <recent name="org.gxj.demo.jvm.instructions.comparisons.dcmp" />
+      <recent name="org.gxj.demo.jvm.instructions.conversions.f2x" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\javaProject\demo-jvm\demo-jvm-01\src\main\java\org\gxj\demo\jvm\instructions\comparisons\if_icmp" />
+      <recent name="E:\javaProject\demo-jvm\demo-jvm-01\src\main\java\org\gxj\demo\jvm\instructions\comparisons" />
+      <recent name="E:\javaProject\demo-jvm\demo-jvm-01\src\main\java\org\gxj\demo\jvm\instructions\conversions" />
+      <recent name="E:\javaProject\demo-jvm\demo-jvm-01\src\main\java\org\gxj\demo\jvm\instructions\conversions\i2x" />
+      <recent name="E:\javaProject\demo-jvm\demo-jvm-01\src\main\java\org\gxj\demo\jvm\instructions\math\xor" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -107,6 +293,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.gxj.demo.jvm.Main" />
       <module name="demo-jvm-01" />
+      <option name="PROGRAM_PARAMETERS" value="E:\javaProject\demo-jvm\demo-jvm-01\src\test\java\org\gxj\demo\test\HelloWorld" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.gxj.demo.jvm.*" />
@@ -117,15 +304,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,7 +337,10 @@
       <option name="presentableId" value="Default" />
       <updated>1672040000024</updated>
       <workItem from="1672040001084" duration="13586000" />
-      <workItem from="1673255218384" duration="47276000" />
+      <workItem from="1673255218384" duration="56794000" />
+      <workItem from="1673790692338" duration="10206000" />
+      <workItem from="1674218802689" duration="5152000" />
+      <workItem from="1674288121761" duration="5661000" />
     </task>
     <servers />
   </component>
@@ -176,30 +364,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1672042196731" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1673687833583">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1674292953004">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1673687833583" />
-    <state x="958" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1673685901818">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1674292953004" />
+    <state x="958" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1674286492852">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="958" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1673685901818" />
-    <state width="1493" height="249" key="GridCell.Tab.0.bottom" timestamp="1673698445632">
+    <state x="958" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1674286492852" />
+    <state x="749" y="335" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1673700739532">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="249" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1673698445632" />
-    <state width="1493" height="249" key="GridCell.Tab.0.center" timestamp="1673698445632">
+    <state x="749" y="335" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1673700739532" />
+    <state width="717" height="61" key="GridCell.Tab.0.bottom" timestamp="1674293391654">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="249" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1673698445632" />
-    <state width="1493" height="249" key="GridCell.Tab.0.left" timestamp="1673698445632">
+    <state width="717" height="61" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1674293391654" />
+    <state width="717" height="61" key="GridCell.Tab.0.center" timestamp="1674293391654">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="249" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1673698445632" />
-    <state width="1493" height="249" key="GridCell.Tab.0.right" timestamp="1673698445632">
+    <state width="717" height="61" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1674293391654" />
+    <state width="717" height="61" key="GridCell.Tab.0.left" timestamp="1674293391654">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="249" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1673698445632" />
+    <state width="717" height="61" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1674293391654" />
+    <state width="717" height="61" key="GridCell.Tab.0.right" timestamp="1674293391654">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="717" height="61" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1674293391654" />
     <state width="723" height="210" key="GridCell.Tab.1.bottom" timestamp="1673690555536">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -216,10 +408,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="723" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1673690555535" />
-    <state x="417" y="0" key="SettingsEditor" timestamp="1672048621151">
+    <state x="417" y="0" key="SettingsEditor" timestamp="1674287971695">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="417" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1672048621151" />
+    <state x="417" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1674287971695" />
+    <state x="861" y="100" width="582" height="630" key="dock-window-1" timestamp="1674053094539">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="861" y="100" width="582" height="630" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1674053094539" />
     <state x="356" y="73" key="new project wizard" timestamp="1672043260690">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -3,6 +3,7 @@ package org.gxj.demo.jvm.rtda;
 /**
  * @author gxj
  * @date 2023/1/14 15:44
+ * 栈帧
  */
 public class Frame {
 
@@ -15,7 +16,12 @@ public class Frame {
     //操作数栈
     private OperandStack operandStack;
 
-    public Frame(int maxLocals, int maxStack) {
+    private Thread thread;
+
+    private int nextPC;
+
+    public Frame(Thread thread, int maxLocals, int maxStack) {
+        this.thread = thread;
         this.localVars = new LocalVars(maxLocals);
         this.operandStack = new OperandStack(maxStack);
     }
@@ -26,5 +32,17 @@ public class Frame {
 
     public OperandStack operandStack() {
         return this.operandStack;
+    }
+
+    public Thread thread() {
+        return this.thread;
+    }
+
+    public int nextPC() {
+        return this.nextPC;
+    }
+
+    public void setNextPC(int nextPC) {
+        this.nextPC = nextPC;
     }
 }
